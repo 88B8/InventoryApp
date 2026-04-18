@@ -21,7 +21,7 @@ import androidx.room.PrimaryKey
 
 
 /**
- * Entity data class represents a single row in the database.
+ * Модель сущности предмета
  */
 @Entity(tableName = "items")
 data class Item(
