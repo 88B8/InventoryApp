@@ -66,6 +66,9 @@ class ItemDetailsViewModel(
         }
     }
 
+    suspend fun deleteItem() {
+        itemsRepository.deleteItem(uiState.value.itemDetails.toItem())
+    }
 }
 
 /**
